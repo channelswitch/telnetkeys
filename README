@@ -1,0 +1,9 @@
+This is a text-based multiplayer maze type game implemented as a Telnet server.
+It is a completely standalone C program with no dependencies other than some
+linux-specific syscalls (like epoll). By default it wants to run on port 23,
+which requires root.
+
+To play, type "load levels" in the server. This loads the levels in the file
+"levels" that is part of the repository. Then simply connect to the game with
+telnet from another terminal. Multiple people can be playing at the same time,
+and this is required to get past some of the example levels.
